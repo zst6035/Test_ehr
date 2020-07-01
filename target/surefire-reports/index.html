@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 47 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-test">
+              <span class="suite-name border-failed">test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-test">
+                    <span>D:\java_interface\testng\Test_ehr\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-test">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">59 methods, 47 failed,  6 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-test" class="hide-methods failed suite-test"> (hide)</a> <!-- hide-methods failed suite-test -->
+                      <a href="#" panel-name="suite-test" class="show-methods failed suite-test"> (show)</a> <!-- show-methods failed suite-test -->
+                    </span>
+                    <div class="method-list-content failed suite-test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-补签)">ehr_link(ehr链接-流程-我的申请-补签)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-组织员工-组织管理)">ehr_link(ehr链接-组织员工-组织管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程监控-offer)">ehr_link(ehr链接-流程监控-offer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-工作日历)">ehr_link(ehr链接-设置-工作日历)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-法定假日)">ehr_link(ehr链接-设置-法定假日)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-加班补卡)">ehr_link(ehr链接-流程-我的申请-加班补卡)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-组织员工-人员管理)">ehr_link(ehr链接-组织员工-人员管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-转正)">ehr_link(ehr链接-流程-我的申请-转正)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-入职准备-待办)">ehr_link(ehr链接-入职准备-待办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-加班撤销)">ehr_link(ehr链接-流程-我的申请-加班撤销)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-权限-角色管理)">ehr_link(ehr链接-权限-角色管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-班次)">ehr_link(ehr链接-设置-班次)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-考勤期间)">ehr_link(ehr链接-设置-考勤期间)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-权限-用户管理)">ehr_link(ehr链接-权限-用户管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-考勤档案规则)">ehr_link(ehr链接-设置-考勤档案规则)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请)">ehr_link(ehr链接-流程-我的申请)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-假期余额)">ehr_link(ehr链接-假勤管理-假期余额)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-日报)">ehr_link(ehr链接-假勤管理-日报)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-实习转正)">ehr_link(ehr链接-流程-我的申请-实习转正)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-值集管理)">ehr_link(ehr链接-值集管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-通知)">ehr_link(ehr链接-通知)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我参与的)">ehr_link(ehr链接-流程-我参与的)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-月报)">ehr_link(ehr链接-假勤管理-月报)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-组织员工-全部档案)">ehr_link(ehr链接-组织员工-全部档案)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-职级)">ehr_link(ehr链接-职级)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-排班管理)">ehr_link(ehr链接-假勤管理-排班管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-设置-考勤方案)">ehr_link(ehr链接-设置-考勤方案)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的待办)">ehr_link(ehr链接-流程-我的待办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-离职交接-已办)">ehr_link(ehr链接-离职交接-已办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-自动编码)">ehr_link(ehr链接-自动编码)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-加班管理)">ehr_link(ehr链接-假勤管理-加班管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-离职交接-待办)">ehr_link(ehr链接-离职交接-待办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-入职准备-已办)">ehr_link(ehr链接-入职准备-已办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-组织员工-合同管理)">ehr_link(ehr链接-组织员工-合同管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-加班)">ehr_link(ehr链接-流程-我的申请-加班)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-组织员工-生效档案)">ehr_link(ehr链接-组织员工-生效档案)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-休假管理)">ehr_link(ehr链接-假勤管理-休假管理)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的已办)">ehr_link(ehr链接-流程-我的已办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程监控)">ehr_link(ehr链接-流程监控)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-请假)">ehr_link(ehr链接-流程-我的申请-请假)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-移动签到)">ehr_link(ehr链接-移动签到)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-权限-管理单元)">ehr_link(ehr链接-权限-管理单元)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-流程-我的申请-销假)">ehr_link(ehr链接-流程-我的申请-销假)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-休假管理-审批中)">ehr_link(ehr链接-休假管理-审批中)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-成本中心)">ehr_link(ehr链接-成本中心)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-假勤管理-考勤记录)">ehr_link(ehr链接-假勤管理-考勤记录)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="findErroAttendace">findErroAttendace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-test" class="hide-methods skipped suite-test"> (hide)</a> <!-- hide-methods skipped suite-test -->
+                      <a href="#" panel-name="suite-test" class="show-methods skipped suite-test"> (show)</a> <!-- show-methods skipped suite-test -->
+                    </span>
+                    <div class="method-list-content skipped suite-test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="TaskToDo">TaskToDo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="fillCheckApply">fillCheckApply</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="getAllPageTask">getAllPageTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="taskCompleteBatch">taskCompleteBatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="taskTransfer">taskTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_attendance" hash-for-method="vacationApply">vacationApply</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-test" class="hide-methods passed suite-test"> (hide)</a> <!-- hide-methods passed suite-test -->
+                      <a href="#" panel-name="suite-test" class="show-methods passed suite-test"> (show)</a> <!-- show-methods passed suite-test -->
+                    </span>
+                    <div class="method-list-content passed suite-test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-我的考勤)">ehr_link(ehr链接-我的考勤)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-补签)">ehr_link(ehr链接-补签)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-我的考勤-异常)">ehr_link(ehr链接-我的考勤-异常)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-请假)">ehr_link(ehr链接-请假)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-转办)">ehr_link(ehr链接-转办)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test" title="com.ehr.cases.ehr_links2" hash-for-method="ehr_link(ehr链接-批量审批)">ehr_link(ehr链接-批量审批)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-test" class="panel test">
+          <div class="suite-test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ehr.cases.ehr_links2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-补签)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-补签) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-补签)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-组织员工-组织管理)">
+                  </a> <!-- ehr_link(ehr链接-组织员工-组织管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-组织员工-组织管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程监控-offer)">
+                  </a> <!-- ehr_link(ehr链接-流程监控-offer) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程监控-offer)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-工作日历)">
+                  </a> <!-- ehr_link(ehr链接-设置-工作日历) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-工作日历)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-法定假日)">
+                  </a> <!-- ehr_link(ehr链接-设置-法定假日) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-法定假日)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-加班补卡)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-加班补卡) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-加班补卡)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-组织员工-人员管理)">
+                  </a> <!-- ehr_link(ehr链接-组织员工-人员管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-组织员工-人员管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-转正)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-转正) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-转正)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-入职准备-待办)">
+                  </a> <!-- ehr_link(ehr链接-入职准备-待办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-入职准备-待办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-加班撤销)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-加班撤销) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-加班撤销)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-权限-角色管理)">
+                  </a> <!-- ehr_link(ehr链接-权限-角色管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-权限-角色管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-班次)">
+                  </a> <!-- ehr_link(ehr链接-设置-班次) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-班次)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-考勤期间)">
+                  </a> <!-- ehr_link(ehr链接-设置-考勤期间) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-考勤期间)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-权限-用户管理)">
+                  </a> <!-- ehr_link(ehr链接-权限-用户管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-权限-用户管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-考勤档案规则)">
+                  </a> <!-- ehr_link(ehr链接-设置-考勤档案规则) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-考勤档案规则)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-假期余额)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-假期余额) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-假期余额)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-日报)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-日报) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-日报)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-实习转正)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-实习转正) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-实习转正)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-值集管理)">
+                  </a> <!-- ehr_link(ehr链接-值集管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-值集管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-通知)">
+                  </a> <!-- ehr_link(ehr链接-通知) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-通知)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我参与的)">
+                  </a> <!-- ehr_link(ehr链接-流程-我参与的) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我参与的)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-月报)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-月报) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-月报)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-组织员工-全部档案)">
+                  </a> <!-- ehr_link(ehr链接-组织员工-全部档案) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-组织员工-全部档案)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-职级)">
+                  </a> <!-- ehr_link(ehr链接-职级) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-职级)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-排班管理)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-排班管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-排班管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-设置-考勤方案)">
+                  </a> <!-- ehr_link(ehr链接-设置-考勤方案) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-设置-考勤方案)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的待办)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的待办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的待办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-离职交接-已办)">
+                  </a> <!-- ehr_link(ehr链接-离职交接-已办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-离职交接-已办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-自动编码)">
+                  </a> <!-- ehr_link(ehr链接-自动编码) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-自动编码)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-加班管理)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-加班管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-加班管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-离职交接-待办)">
+                  </a> <!-- ehr_link(ehr链接-离职交接-待办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-离职交接-待办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-入职准备-已办)">
+                  </a> <!-- ehr_link(ehr链接-入职准备-已办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-入职准备-已办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-组织员工-合同管理)">
+                  </a> <!-- ehr_link(ehr链接-组织员工-合同管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-组织员工-合同管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-加班)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-加班) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-加班)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-组织员工-生效档案)">
+                  </a> <!-- ehr_link(ehr链接-组织员工-生效档案) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-组织员工-生效档案)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-休假管理)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-休假管理) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-休假管理)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的已办)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的已办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的已办)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程监控)">
+                  </a> <!-- ehr_link(ehr链接-流程监控) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程监控)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-请假)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-请假) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-请假)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-移动签到)">
+                  </a> <!-- ehr_link(ehr链接-移动签到) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-移动签到)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-权限-管理单元)">
+                  </a> <!-- ehr_link(ehr链接-权限-管理单元) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-权限-管理单元)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-流程-我的申请-销假)">
+                  </a> <!-- ehr_link(ehr链接-流程-我的申请-销假) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-流程-我的申请-销假)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-休假管理-审批中)">
+                  </a> <!-- ehr_link(ehr链接-休假管理-审批中) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-休假管理-审批中)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-成本中心)">
+                  </a> <!-- ehr_link(ehr链接-成本中心) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-成本中心)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-假勤管理-考勤记录)">
+                  </a> <!-- ehr_link(ehr链接-假勤管理-考勤记录) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-假勤管理-考勤记录)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-class-failed -->
+          <div class="suite-test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ehr.cases.ehr_attendance</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findErroAttendace">
+                  </a> <!-- findErroAttendace -->
+                  <span class="method-name">findErroAttendace</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.ehr.cases.ehr_attendance.findErroAttendace(ehr_attendance.java:75)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(获取异常考勤数据)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-class-failed -->
+          <div class="suite-test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ehr.cases.ehr_attendance</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TaskToDo">
+                  </a> <!-- TaskToDo -->
+                  <span class="method-name">TaskToDo</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.TaskToDo()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(我的待办)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillCheckApply">
+                  </a> <!-- fillCheckApply -->
+                  <span class="method-name">fillCheckApply</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.fillCheckApply()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(补签)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllPageTask">
+                  </a> <!-- getAllPageTask -->
+                  <span class="method-name">getAllPageTask</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.getAllPageTask()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(流程监控)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="taskCompleteBatch">
+                  </a> <!-- taskCompleteBatch -->
+                  <span class="method-name">taskCompleteBatch</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.taskCompleteBatch()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(批量审批)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="taskTransfer">
+                  </a> <!-- taskTransfer -->
+                  <span class="method-name">taskTransfer</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.taskTransfer()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(发起转办)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="vacationApply">
+                  </a> <!-- vacationApply -->
+                  <span class="method-name">vacationApply</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ehr_attendance.vacationApply()[pri:0, instance:com.ehr.cases.ehr_attendance@4d5b6aac] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(请假)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-class-skipped -->
+          <div class="suite-test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ehr.cases.ehr_links2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-我的考勤)">
+                  </a> <!-- ehr_link(ehr链接-我的考勤) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-我的考勤)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-补签)">
+                  </a> <!-- ehr_link(ehr链接-补签) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-补签)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-我的考勤-异常)">
+                  </a> <!-- ehr_link(ehr链接-我的考勤-异常) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-我的考勤-异常)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-请假)">
+                  </a> <!-- ehr_link(ehr链接-请假) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-请假)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-转办)">
+                  </a> <!-- ehr_link(ehr链接-转办) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-转办)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ehr_link(ehr链接-批量审批)">
+                  </a> <!-- ehr_link(ehr链接-批量审批) -->
+                  <span class="method-name">ehr_link</span>
+                  <span class="parameters">(ehr链接-批量审批)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-class-passed -->
+        </div> <!-- panel test -->
+        <div panel-name="test-xml-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\java_interface\testng\Test_ehr\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.ehr.config.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;login&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.ehr.cases.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ehr.cases.ehr_attendance&quot;/&gt;
+      &lt;class name=&quot;com.ehr.cases.ehr_links2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login --&gt;
+&lt;/suite&gt; &lt;!-- test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">login (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_test');
+function tableData_test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(59);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'findErroAttendace')
+data.setCell(0, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(0, 3, 1551);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ehr_link')
+data.setCell(1, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(1, 3, 24);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ehr_link')
+data.setCell(2, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(2, 3, 15);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ehr_link')
+data.setCell(3, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(3, 3, 13);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ehr_link')
+data.setCell(4, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(4, 3, 13);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ehr_link')
+data.setCell(5, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(5, 3, 12);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ehr_link')
+data.setCell(6, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(6, 3, 12);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ehr_link')
+data.setCell(7, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(7, 3, 11);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ehr_link')
+data.setCell(8, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(8, 3, 11);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ehr_link')
+data.setCell(9, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(9, 3, 10);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ehr_link')
+data.setCell(10, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(10, 3, 10);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ehr_link')
+data.setCell(11, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(11, 3, 10);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'ehr_link')
+data.setCell(12, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(12, 3, 10);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ehr_link')
+data.setCell(13, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(13, 3, 10);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ehr_link')
+data.setCell(14, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(14, 3, 9);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ehr_link')
+data.setCell(15, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(15, 3, 9);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ehr_link')
+data.setCell(16, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(16, 3, 9);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ehr_link')
+data.setCell(17, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(17, 3, 9);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ehr_link')
+data.setCell(18, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(18, 3, 9);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'ehr_link')
+data.setCell(19, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(19, 3, 9);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ehr_link')
+data.setCell(20, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(20, 3, 9);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ehr_link')
+data.setCell(21, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(21, 3, 9);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ehr_link')
+data.setCell(22, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(22, 3, 9);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'ehr_link')
+data.setCell(23, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(23, 3, 9);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'ehr_link')
+data.setCell(24, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(24, 3, 8);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'ehr_link')
+data.setCell(25, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(25, 3, 8);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'ehr_link')
+data.setCell(26, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(26, 3, 8);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'ehr_link')
+data.setCell(27, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(27, 3, 8);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'ehr_link')
+data.setCell(28, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(28, 3, 8);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'ehr_link')
+data.setCell(29, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(29, 3, 8);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'ehr_link')
+data.setCell(30, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(30, 3, 8);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'ehr_link')
+data.setCell(31, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(31, 3, 8);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'ehr_link')
+data.setCell(32, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(32, 3, 8);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'ehr_link')
+data.setCell(33, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(33, 3, 8);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'ehr_link')
+data.setCell(34, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(34, 3, 8);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'ehr_link')
+data.setCell(35, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(35, 3, 8);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'ehr_link')
+data.setCell(36, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(36, 3, 8);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'ehr_link')
+data.setCell(37, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(37, 3, 8);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'ehr_link')
+data.setCell(38, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(38, 3, 8);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'ehr_link')
+data.setCell(39, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(39, 3, 7);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'ehr_link')
+data.setCell(40, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(40, 3, 7);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'ehr_link')
+data.setCell(41, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(41, 3, 7);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'ehr_link')
+data.setCell(42, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(42, 3, 7);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'ehr_link')
+data.setCell(43, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(43, 3, 7);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'ehr_link')
+data.setCell(44, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(44, 3, 7);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'ehr_link')
+data.setCell(45, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(45, 3, 7);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'ehr_link')
+data.setCell(46, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(46, 3, 7);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'ehr_link')
+data.setCell(47, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'ehr_link')
+data.setCell(48, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'ehr_link')
+data.setCell(49, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'ehr_link')
+data.setCell(50, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'ehr_link')
+data.setCell(51, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'ehr_link')
+data.setCell(52, 2, 'com.ehr.cases.ehr_links2')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'fillCheckApply')
+data.setCell(53, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'TaskToDo')
+data.setCell(54, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'taskTransfer')
+data.setCell(55, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'vacationApply')
+data.setCell(56, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'taskCompleteBatch')
+data.setCell(57, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'getAllPageTask')
+data.setCell(58, 2, 'com.ehr.cases.ehr_attendance')
+data.setCell(58, 3, 0);
+window.suiteTableData['test']= { tableData: data, tableDiv: 'times-div-test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-test">
+              </div> <!-- times-div-test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ehr.cases.ehr_attendance</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ehr.cases.ehr_links2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">448 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ehr.cases.ehr_attendance</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">findErroAttendace</span>
+                <span class="method-start">545 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ehr.cases.ehr_links2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请)</span>
+                <span class="method-start">2226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-加班)</span>
+                <span class="method-start">2238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-加班撤销)</span>
+                <span class="method-start">2247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-请假)</span>
+                <span class="method-start">2257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-销假)</span>
+                <span class="method-start">2266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-加班补卡)</span>
+                <span class="method-start">2274 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-补签)</span>
+                <span class="method-start">2284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-转正)</span>
+                <span class="method-start">2293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的申请-实习转正)</span>
+                <span class="method-start">2301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的待办)</span>
+                <span class="method-start">2311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我的已办)</span>
+                <span class="method-start">2320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程-我参与的)</span>
+                <span class="method-start">2330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-入职准备-待办)</span>
+                <span class="method-start">2338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-入职准备-已办)</span>
+                <span class="method-start">2347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-离职交接-待办)</span>
+                <span class="method-start">2356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-离职交接-已办)</span>
+                <span class="method-start">2365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-组织员工-人员管理)</span>
+                <span class="method-start">2376 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-组织员工-合同管理)</span>
+                <span class="method-start">2386 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-组织员工-组织管理)</span>
+                <span class="method-start">2400 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-组织员工-生效档案)</span>
+                <span class="method-start">2408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-组织员工-全部档案)</span>
+                <span class="method-start">2416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-排班管理)</span>
+                <span class="method-start">2425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-考勤记录)</span>
+                <span class="method-start">2435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-休假管理)</span>
+                <span class="method-start">2444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-休假管理-审批中)</span>
+                <span class="method-start">2456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-加班管理)</span>
+                <span class="method-start">2468 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-日报)</span>
+                <span class="method-start">2479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-月报)</span>
+                <span class="method-start">2488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-假勤管理-假期余额)</span>
+                <span class="method-start">2498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-权限-用户管理)</span>
+                <span class="method-start">2510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-权限-角色管理)</span>
+                <span class="method-start">2518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-权限-管理单元)</span>
+                <span class="method-start">2527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程监控)</span>
+                <span class="method-start">2536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-流程监控-offer)</span>
+                <span class="method-start">2544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-移动签到)</span>
+                <span class="method-start">2554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-值集管理)</span>
+                <span class="method-start">2567 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-成本中心)</span>
+                <span class="method-start">2576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-自动编码)</span>
+                <span class="method-start">2590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-职级)</span>
+                <span class="method-start">2597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-考勤期间)</span>
+                <span class="method-start">2606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-考勤档案规则)</span>
+                <span class="method-start">2631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-考勤方案)</span>
+                <span class="method-start">2639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-班次)</span>
+                <span class="method-start">2650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-工作日历)</span>
+                <span class="method-start">2661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-设置-法定假日)</span>
+                <span class="method-start">2668 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ehr_link(ehr链接-通知)</span>
+                <span class="method-start">2683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-补签)</span>
+                <span class="method-start">2694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-我的考勤)</span>
+                <span class="method-start">2695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-我的考勤-异常)</span>
+                <span class="method-start">2697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-请假)</span>
+                <span class="method-start">2697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-转办)</span>
+                <span class="method-start">2698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ehr_link(ehr链接-批量审批)</span>
+                <span class="method-start">2698 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

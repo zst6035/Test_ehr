@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [test]">
+  <listeners>
+    <listener class-name="com.ehr.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="login(failed)">
+    <classes>
+      <class name="com.ehr.cases.ehr_links2">
+        <methods>
+          <include name="ehr_link" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.ehr.cases.ehr_links2 -->
+      <class name="com.ehr.cases.ehr_attendance">
+        <methods>
+          <include name="taskTransfer"/>
+          <include name="fillCheckApply"/>
+          <include name="TaskToDo"/>
+          <include name="vacationApply"/>
+          <include name="beforeTest"/>
+          <include name="taskCompleteBatch"/>
+          <include name="findErroAttendace"/>
+          <include name="getAllPageTask"/>
+        </methods>
+      </class> <!-- com.ehr.cases.ehr_attendance -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [test] -->

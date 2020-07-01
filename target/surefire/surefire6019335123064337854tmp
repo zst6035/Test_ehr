@@ -1,0 +1,5 @@
+#surefire
+#Tue Jun 30 11:25:32 CST 2020
+user.dir=D\:\\java_interface\\testng\\Test_ehr
+localRepository=D\:\\maven\\repository
+basedir=D\:\\java_interface\\testng\\Test_ehr

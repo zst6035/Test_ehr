@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="TestSuite">
+    <test name="ehr_test">
+        <packages>
+            <package name ="com.ehr.cases.*" />
+   </packages>
+    </test>
+    <listeners>
+        <listener class-name="com.ehr.config.ExtentTestNGIReporterListener" />
+    </listeners>
+
+</suite>

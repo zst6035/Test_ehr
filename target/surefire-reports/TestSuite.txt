@@ -1,0 +1,468 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 59, Failures: 47, Errors: 0, Skipped: 6, Time elapsed: 7.981 sec <<< FAILURE!
+findErroAttendace(com.ehr.cases.ehr_attendance)  Time elapsed: 1.556 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.ehr.cases.ehr_attendance.findErroAttendace(ehr_attendance.java:75)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.024 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
+ehr_link(com.ehr.cases.ehr_links2)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [操作成功] but found [登录已失效，请重新登录]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_links2.ehr_link(ehr_links2.java:54)
+
