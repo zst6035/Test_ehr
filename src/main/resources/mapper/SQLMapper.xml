@@ -14,4 +14,10 @@
     <select id="selvalue" parameterType="String" resultType="String">
         select evalue from ehrutil  where describtion=#{0}
     </select>
+    <insert id="InDate" parameterType="String">
+        insert  into ehrcalendar(id,edate) values (default,#{0})
+    </insert>
+    <select id="selDayMessage" parameterType="String" resultType="ehrcalendar">
+        select * from ehrcalendar where edate=#{0}
+    </select>
 </mapper>

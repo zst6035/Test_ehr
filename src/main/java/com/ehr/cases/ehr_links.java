@@ -25,24 +25,24 @@ import java.util.List;
 
 public class ehr_links {
 
+//可供调试使用
+    @BeforeTest
+    public void beforeTest() throws IOException{
+        //声明httpclient,cookie,ip地址等
+        TestConfig.defaultHttpClient=new DefaultHttpClient();
+        TestConfig.store=new BasicCookieStore();
+        TestConfig.session= DatabaseUtil.getSqlSession();
+        String cookie_value=TestConfig.session.selectOne("com.ehr.flowes.selvalue","cookie");
+        System.out.println(cookie_value);
+        BasicClientCookie basicClientCookie=new BasicClientCookie("EHR_COOKIES20190505ERWFSDF",cookie_value);
+        TestConfig.store.addCookie(basicClientCookie);
+        TestConfig.url=TestConfig.session.selectOne("com.ehr.flowes.selvalue","ip_test");
+        basicClientCookie.setDomain(TestConfig.url);
+        //basicClientCookie.setDomain("tehr.mandao.com");
+        basicClientCookie.setPath("/");
+        TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
 
-//    @BeforeTest
-//    public void beforeTest() throws IOException{
-//        //声明httpclient,cookie,ip地址等
-//        TestConfig.defaultHttpClient=new DefaultHttpClient();
-//        TestConfig.store=new BasicCookieStore();
-//        SqlSession session= DatabaseUtil.getSqlSession();
-//        String cookie_value=session.selectOne("com.ehr.flowes.selevalue","cookie");
-//        System.out.println(cookie_value);
-//        BasicClientCookie basicClientCookie=new BasicClientCookie("EHR_COOKIES20190505ERWFSDF",cookie_value);
-//        TestConfig.store.addCookie(basicClientCookie);
-//        TestConfig.url=session.selectOne("com.ehr.flowes.selevalue","ip_test");
-//        basicClientCookie.setDomain(TestConfig.url);
-//        //basicClientCookie.setDomain("tehr.mandao.com");
-//        basicClientCookie.setPath("/");
-//        TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
-//
-//    }
+    }
 
 
     @Test(testName = "ehr链接",dataProvider = "getlink")

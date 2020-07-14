@@ -1,0 +1,695 @@
+<html>
+<head>
+<title>TestNG:  ehr_test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ehr_test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>65/4/2</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 07 19:19:25 CST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10687 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.OvertimeRevocation()'><b>OvertimeRevocation</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 加班撤销</td>
+<td><div><pre>java.lang.AssertionError: expected [操作成功] but found [存在审批中或审批通过的撤销单据，不可重复撤销]
+	at com.ehr.cases.ehr_attendance.OvertimeRevocation(ehr_attendance.java:236)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace923083575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace923083575'><pre>java.lang.AssertionError: expected [操作成功] but found [存在审批中或审批通过的撤销单据，不可重复撤销]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_attendance.OvertimeRevocation(ehr_attendance.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.findErroAttendace()'><b>findErroAttendace</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 获取异常考勤数据<br/>
+<a href="#Output-1878413714" onClick='toggleBox("Output-1878413714", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1878413714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1878413714">
+异常数据请求结果为{"success":true,"code":"00000","message":"操作成功","data":{"pageNum":1,"pageSize":10,"total":6,"list":[{"id":300178,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-07-07","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":0.0,"absenceDurationStr":"0分钟","absenceEarly":0.0,"absenceLate":0.0,"actualFirstCard":null,"actualLastCard":null,"checkStartCard":"09:00","checkEndCard":"18:00","startReason":"1","startReasonName":null,"endReason":"1","endReasonName":null,"startRemark":"","endRemark":"","checkStatus":"6","checkStatusName":"草稿","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-07-07 05:00:00","cardStopDate":"2020-07-08 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"事假09:00-18:00[审批中]","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":8466,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:32","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期二","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-07-07 09:00","vacationEndTime":"2020-07-07 18:00"},{"id":296361,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-07-03","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":480.0,"absenceDurationStr":"8小时0分钟","absenceEarly":180.0,"absenceLate":300.0,"actualFirstCard":"12:19","actualLastCard":"12:42","checkStartCard":null,"checkEndCard":null,"startReason":null,"startReasonName":null,"endReason":null,"endReasonName":null,"startRemark":null,"endRemark":null,"checkStatus":null,"checkStatusName":"","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-07-03 05:00:00","cardStopDate":"2020-07-04 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":null,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:31","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期五","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-07-03 09:00","vacationEndTime":"2020-07-03 18:00"},{"id":295417,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-07-02","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":480.0,"absenceDurationStr":"8小时0分钟","absenceEarly":210.0,"absenceLate":270.0,"actualFirstCard":null,"actualLastCard":null,"checkStartCard":"09:00","checkEndCard":"18:00","startReason":"1","startReasonName":null,"endReason":"1","endReasonName":null,"startRemark":null,"endRemark":null,"checkStatus":"1","checkStatusName":"审批中","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-07-02 05:00:00","cardStopDate":"2020-07-03 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":8377,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:31","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期四","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-07-02 09:00","vacationEndTime":"2020-07-02 18:00"},{"id":294481,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-07-01","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":480.0,"absenceDurationStr":"8小时0分钟","absenceEarly":210.0,"absenceLate":270.0,"actualFirstCard":null,"actualLastCard":null,"checkStartCard":null,"checkEndCard":null,"startReason":null,"startReasonName":null,"endReason":null,"endReasonName":null,"startRemark":null,"endRemark":null,"checkStatus":null,"checkStatusName":"","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-07-01 05:00:00","cardStopDate":"2020-07-02 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"事假09:00-18:00[审批中]","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":null,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:31","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期三","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-07-01 09:00","vacationEndTime":"2020-07-01 18:00"},{"id":292596,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-06-29","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":480.0,"absenceDurationStr":"8小时0分钟","absenceEarly":210.0,"absenceLate":270.0,"actualFirstCard":null,"actualLastCard":null,"checkStartCard":"09:00","checkEndCard":"18:00","startReason":"1","startReasonName":null,"endReason":"1","endReasonName":null,"startRemark":null,"endRemark":null,"checkStatus":"7","checkStatusName":"终止","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-06-29 05:00:00","cardStopDate":"2020-06-30 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":8348,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:31","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期一","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-06-29 09:00","vacationEndTime":"2020-06-29 18:00"},{"id":289758,"createTime":null,"updateTime":null,"eff":null,"createUserId":null,"updateUserId":null,"createTimeStart":null,"createTimeEnd":null,"order":null,"status":null,"limitParam":null,"userId":993,"cardNumber":null,"cardDate":"2020-06-26","currentClasses":91,"currentClassesName":"研发班","lastClasses":null,"nextClasses":null,"absenceDuration":480.0,"absenceDurationStr":"8小时0分钟","absenceEarly":210.0,"absenceLate":270.0,"actualFirstCard":null,"actualLastCard":null,"checkStartCard":"09:00","checkEndCard":"18:00","startReason":"1","startReasonName":null,"endReason":"1","endReasonName":null,"startRemark":null,"endRemark":null,"checkStatus":"1","checkStatusName":"审批中","attendanceDocId":2606,"effectTimeVacation":null,"dateType":"WORK_DAY","dateTypeName":"工作日","workPeriod":0.00,"workPeriodStr":"0.00","attendancePlanId":15,"attDept":102,"attDeptName":"支付组-变更","type":"NORMAL_ATTENDANCE","ondutyDate":"09:00","offdutyDate":"18:00","cardStartDate":"2020-06-26 05:00:00","cardStopDate":"2020-06-27 04:59:00","attendanceStatus":"UN_NOR","attendanceStatusName":"异常","effectRemarkVacation":"","vacationRecordList":null,"currentClassOjb":null,"halfPointDateTime":null,"processId":8379,"actualLstWorkday":null,"calculatedState":"SUCCESS_CALCULATED","calculatedStateName":"计算成功","calculatedResult":"最新计算时间:2020-07-07 19:06:30","userName":"张守婷新","jobCode":"bf1367","deptId":103,"deptName":"资管组","weekStr":"星期五","entryDate":"2018-06-04","empStatus":"2","empStatusName":"正式","orgDeptName":null,"earlyPointCheck":"1","latePointCheck":"1","vacationStartTime":"2020-06-26 09:00","vacationEndTime":"2020-06-26 18:00"}],"pages":1,"hasPreviousPage":false,"hasNextPage":false,"prePage":0,"nextPage":0,"firstPage":true,"lastPage":true}}<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.ehr.cases.ehr_attendance.findErroAttendace(ehr_attendance.java:107)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1878413714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1878413714'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.ehr.cases.ehr_attendance.findErroAttendace(ehr_attendance.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>1</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.overtimeApply()'><b>overtimeApply</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 加班</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.ehr.cases.ehr_attendance.overtimeApply(ehr_attendance.java:184)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649769713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace649769713'><pre>java.lang.NullPointerException
+	at com.ehr.cases.ehr_attendance.overtimeApply(ehr_attendance.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.taskCompleteBatch()'><b>taskCompleteBatch</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 批量审批</td>
+<td><div><pre>java.lang.AssertionError: expected [操作成功] but found [离职申请审批,不支持批量操作,请重新选择]
+	at com.ehr.cases.ehr_attendance.taskCompleteBatch(ehr_attendance.java:387)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275028674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275028674'><pre>java.lang.AssertionError: expected [操作成功] but found [离职申请审批,不支持批量操作,请重新选择]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.ehr.cases.ehr_attendance.taskCompleteBatch(ehr_attendance.java:387)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.TaskToDo()'><b>TaskToDo</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 我的待办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.VacationRevocation()'><b>VacationRevocation</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 销假</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-加班</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-加班撤销</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-请假</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-销假</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-加班补卡</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-补签</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-转正</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-我的申请-实习转正</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-审批中心-我的待办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-审批中心-我的已办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程-审批中心-我参与的</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-入职准备-待办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-入职准备-已办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-离职交接-待办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-离职交接-已办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-组织员工-人员管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-组织员工-合同管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-组织员工-组织管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-组织员工-生效档案</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-组织员工-全部档案</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-排班管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-考勤记录</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-休假管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-休假管理-审批中</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-加班管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-日报</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-月报</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-假勤管理-假期余额</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-权限-用户管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-权限-角色管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-权限-管理单元</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程监控</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-流程监控-offer</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-移动签到</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-值集管理</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-成本中心</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-自动编码</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-职级</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-考勤期间</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-考勤档案规则</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-考勤方案</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-班次</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-工作日历</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-设置-法定假日</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-通知</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-补签</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-我的考勤</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-我的考勤-异常</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-请假</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-转办</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-批量审批</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-工作日加班</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-加班撤销</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-我的加班-已审批</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-通知-全部已读</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-我的请假-已审批</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-销假</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_links.ehr_link()'><b>ehr_link</b><br>Test class: com.ehr.cases.ehr_links<br>Parameters: ehr链接-档案-编辑</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_links@3551a94</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.getAllPageTask()'><b>getAllPageTask</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 流程监控</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.myOvertimeListPage()'><b>myOvertimeListPage</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 我的加班-已审批</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.myVacatoinPage()'><b>myVacatoinPage</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 我的请假-已审批</td>
+<td></td>
+<td>0</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.taskTransfer()'><b>taskTransfer</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 发起转办</td>
+<td></td>
+<td>1</td>
+<td>com.ehr.cases.ehr_attendance@5a61f5df</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.fillCheckApply()'><b>fillCheckApply</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 补签</td>
+<td><div><pre>java.lang.Throwable: Method ehr_attendance.fillCheckApply()[pri:0, instance:com.ehr.cases.ehr_attendance@5a61f5df] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172215878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace172215878'><pre>java.lang.Throwable: Method ehr_attendance.fillCheckApply()[pri:0, instance:com.ehr.cases.ehr_attendance@5a61f5df] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.ehr.cases.ehr_attendance.vacationApply()'><b>vacationApply</b><br>Test class: com.ehr.cases.ehr_attendance<br>Test method: 请假</td>
+<td><div><pre>java.lang.Throwable: Method ehr_attendance.vacationApply()[pri:0, instance:com.ehr.cases.ehr_attendance@5a61f5df] depends on not successfully finished methods
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913065088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913065088'><pre>java.lang.Throwable: Method ehr_attendance.vacationApply()[pri:0, instance:com.ehr.cases.ehr_attendance@5a61f5df] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:93)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at com.sun.proxy.$Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:145)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

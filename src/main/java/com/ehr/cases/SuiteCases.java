@@ -27,6 +27,7 @@ public class SuiteCases {
         //basicClientCookie.setDomain("tehr.mandao.com");
         basicClientCookie.setPath("/");
         TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
+        TestConfig.userId=Integer.parseInt(TestConfig.session.selectOne("selvalue","userId").toString()) ;
     }
 
     @AfterSuite
