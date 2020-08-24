@@ -7,6 +7,7 @@ import javax.activation.FileDataSource;
 import javax.mail.*;
 import javax.mail.internet.*;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -91,14 +92,14 @@ public class SendMail {
         }
     }
 
-    //测试发送邮件
-//    public static void main(String[] args) throws Exception {
-//        List<String> list=new ArrayList<>();
-//        list.add("shouting_zhang@baofu.com");
-//        list.add("1148744992@qq.com");
-//       File file= FileList.orderByDate();
-//         sendMail(list,file);
-//        System.out.println("发送完成");
-//    }
+  //  测试发送邮件
+    public static void main(String[] args) throws Exception {
+        String[] list=new String[2];
+        list[0]="shouting_zhang@baofu.com";
+        list[1]="1148744992@qq.com";
+       File file= FileList.orderByDate();
+         sendMail(list,file);
+        System.out.println("发送完成");
+    }
 }
 

@@ -154,7 +154,7 @@ public static void sendMail(String[] tos,File file) throws Exception {
         Multipart multipart = new MimeMultipart();
         // 设置邮件的文本内容
         BodyPart contentPart = new MimeBodyPart();
-        contentPart.setText("Hello,附件为ehr测试报告，请查收！");
+        contentPart.setText("设置邮件内容第二种方法···");
         multipart.addBodyPart(contentPart);
         //声明附件地址
 //            File file = new File("");

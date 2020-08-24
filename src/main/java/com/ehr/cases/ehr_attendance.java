@@ -59,7 +59,7 @@ public class ehr_attendance  {
         TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
 
     }
-    //获取考勤异常数据
+    //获取当前用户考勤异常数据
     @Test(description = "获取异常考勤数据")
     public void findErroAttendace() throws IOException{
        // SqlSession session=DatabaseUtil.getSqlSession();
@@ -162,32 +162,34 @@ public class ehr_attendance  {
         body1.put("userId", TestConfig.userId);
         //提交当月第一天的加班，不过当月第一天有可能是双休日，节假日，先不考虑那么细了
         //应该将考勤日历新建一个表放入数据库，根据表判断是否什么日子;在判断这个天加班是换调休还是加班费；
-        //获取当月考勤第一天；
-        String startTime=TestConfig.session.selectOne("selvalue","startTime");
 
+        //获取当月考勤最后一天；
+        String endTime=TestConfig.session.selectOne("selvalue","endTime");
+
+        //因为ehr升级，第一天的加班无法提交，会被拦截
         //获取当天加班的话，相关信息
-        ehrcalendar ehrcalendar=TestConfig.session.selectOne("selDayMessage",startTime);
+        ehrcalendar ehrcalendar=TestConfig.session.selectOne("selDayMessage",endTime);
         //替换body中相关信息
         body1.put("overtimeType", ehrcalendar.getDtype());
-        body1.put("workDate",startTime);
+        body1.put("workDate",endTime);
         body1.put("compensation",ehrcalendar.getCompensation());
         body1.put("compensationName",ehrcalendar.getCompensationName());
         String result=TestConfig.getResult(url,body1.toString());
 
 
         //如果已存在加班，则取下一天:
-        while(result.equals("已存在审批中或审批通过的加班申请")){
+        while(result.equals("已存在审批中或审批通过的加班申请")|| result.equals("已超过加班申请的提交时间，提交失败")){
            //string类型的转换成日期，然后再往上加一天
-            startTime =TestConfig.getNextDate(startTime);
-            ehrcalendar=TestConfig.session.selectOne("selDayMessage",startTime);
+            endTime =TestConfig.getNextDate(endTime);
+            ehrcalendar=TestConfig.session.selectOne("selDayMessage",endTime);
             //替换body中相关信息
             body1.put("overtimeType", ehrcalendar.getDtype());
-            body1.put("workDate",startTime);
+            body1.put("workDate",endTime);
             body1.put("compensation",ehrcalendar.getCompensation());
             body1.put("compensationName",ehrcalendar.getCompensationName());
               result=TestConfig.getResult(url,body1.toString());
         }
-        System.out.println("加班日期："+startTime);
+        System.out.println("加班日期："+endTime);
           Assert.assertEquals(result,"操作成功");
     }
 
@@ -232,6 +234,7 @@ public class ehr_attendance  {
         String url=TestConfig.session.selectOne("selUrl","加班撤销");
         //任意选择一条加班审批通过的数据
         JSONObject jsonObject=overTimeArray.getJSONObject(TestConfig.intRandom(overTimeArray.size()));
+        System.out.println(jsonObject.toString());
         String result=TestConfig.getResult(url,jsonObject.toString());
       Assert.assertEquals(result,"操作成功");
     }
