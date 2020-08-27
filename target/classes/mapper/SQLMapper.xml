@@ -20,4 +20,9 @@
     <select id="selDayMessage" parameterType="String" resultType="ehrcalendar">
         select * from ehrcalendar where edate=#{0}
     </select>
+
+    <update id="UpdateJobcode" parameterType="ehrutil">
+        update ehrutil set evalue=#{evalue} where describtion=#{describtion};
+    </update>
+
 </mapper>

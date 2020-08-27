@@ -337,4 +337,9 @@ public static void sendMail(String[] tos,File file) throws Exception {
         }
         return sb.toString();
     }
+    //返回随机护照
+    public static String getID(){
+        String l="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        return l;
+    }
 }

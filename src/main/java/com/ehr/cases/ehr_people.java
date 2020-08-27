@@ -2,6 +2,7 @@ package com.ehr.cases;
 
 import com.alibaba.fastjson.JSONObject;
 import com.ehr.config.TestConfig;
+import com.ehr.model.ehrutil;
 import com.ehr.utils.DatabaseUtil;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -13,6 +14,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class ehr_people {
+
 
     @BeforeTest
     public void beforeTest() throws IOException {
@@ -41,13 +43,23 @@ public class ehr_people {
        //用户信息
        String  userName=TestConfig.getChineseName(1);
         String nickName=TestConfig.getString(4);
-        String jobCode="bf9998";
+        //数据库获取编号
+       String  code=TestConfig.session.selectOne("selvalue","jobcode");
+       int i=Integer.parseInt(code);
+        String jobCode="bf"+i;
+        i=i-1;
+        System.out.println(jobCode);
+        System.out.println(i);
+        ehrutil ehrutil1=new ehrutil(1,"jobcode",String.valueOf(i));
+        TestConfig.session.update("UpdateJobcode",ehrutil1);
+
         String email=nickName+"@baofu.com";
         String personalEmail=TestConfig.getEmail(6,9);
         String identifyCode=nickName;
         String mobile=TestConfig.getTel();
         String idCardNo=TestConfig.getString(10);
         //替换ehrUserDTO中某些信息
+
         ehrUserDTO.put("userName",userName);
         ehrUserDTO.put("nickName",nickName);
         ehrUserDTO.put("jobCode",jobCode);
@@ -74,7 +86,14 @@ public class ehr_people {
         //用户信息
         String  userName=TestConfig.getChineseName(1);
         String nickName=TestConfig.getString(4);
-        String jobCode="bf9996";
+        //jobecode是一个序列，不能重复，所以这里要从数据库里取，然后再改掉
+        String  code=TestConfig.session.selectOne("selvalue","jobcode");
+        int i=Integer.parseInt(code);
+        String jobCode="bf"+i;
+        System.out.println(jobCode);
+        i=i-1;
+        ehrutil ehrutil1=new ehrutil(1,"jobcode",String.valueOf(i));
+        TestConfig.session.update("UpdateJobcode",ehrutil1);
         String email=nickName+"@baofu.com";
         String personalEmail=TestConfig.getEmail(6,9);
         String identifyCode=nickName;
@@ -97,6 +116,10 @@ public class ehr_people {
         Assert.assertEquals(result,"新建成功");
 
     }
+//搜索在职人员
 
+
+
+    //
 
 }
